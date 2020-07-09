@@ -1,0 +1,247 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+:root {
+    --jo_white: #FFFFFF;
+    --jo_text: #454C53;
+    --jo_dGrey1: #646464;
+    --jo_dGrey2: #919497;
+    --jo_dGrey3: #AFB6BC;
+    --jo_lGrey1: #DFDFDF;
+    --jo_lGrey2: #F3F3F3;
+    --jo_water: #81C7D4;
+    --jo_dark_water: #616E7D;
+    --jo_yellow: #FFCB05;
+    --jo_orange: #F9A74F;
+    --jo_dark_orange: #bb6a13;
+    --jo_red: #E35050;
+    --jo_dark_red: #801111;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'cwTeXYen', sans-serif;
+    margin: 0px;
+    background: #C9CCD3;
+    background-color: #CDDCDC;
+    background-image: radial-gradient(at 50% 100%, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), linear-gradient(to bottom, rgba(255, 255, 255, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%);
+    background-blend-mode: screen, overlay;
+    background-blend-mode: lighten;
+    background-attachment: fixed;
+    padding: 50px;
+}
+
+/* 格線 */
+
+.jo_col_pc {
+    box-sizing: border-box;
+    margin: 9.375rem 8%;
+    padding: 1.5rem;
+}
+
+/* 標題字 */
+
+h1, h2, h3, h4 {
+    margin: .5rem 0;
+}
+
+.jo_title_l {
+    font-size: 2.5em;
+    color: var(--jo_dark_water);
+}
+
+/* 大按鈕 */
+
+.jo_btn {
+    font-family: 'cwTeXYen', sans-serif;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: var(--jo_white);
+    height: 50px;
+    width: 200px;
+    border: 0;
+    border-radius: 100px;
+    outline: none;
+}
+
+.jo_btnGrey {
+    font-family: 'cwTeXYen', sans-serif;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: var(--jo_white);
+    height: 50px;
+    width: 200px;
+    border: 0;
+    border-radius: 100px;
+    outline: none;
+    background-color: var(--jo_lGrey1);
+    box-shadow: 0 3px 0px var(--jo_dGrey2), 0px 2px 0px 0px rgba(255, 255, 255, 0.5) inset;
+    color: var(--jo_dGrey2);
+}
+
+.jo_btn_m {
+    height: 45px;
+    width: 150px;
+    font-size: 1.125rem;
+}
+
+.jo_btn_s {
+    height: 40px;
+    width: 110px;
+    font-size: 1rem;
+}
+
+.jo_btnWater {
+    background-color: var(--jo_water);
+    box-shadow: 0 3px 0px var(--jo_dark_water), 0px 2px 0px 0px rgba(255, 255, 255, 0.5) inset;
+}
+
+.jo_btnOrange {
+    background-color: var(--jo_orange);
+    box-shadow: 0 3px 0px var(--jo_dark_orange), 0px 2px 0px 0px rgba(255, 255, 255, 0.5) inset;
+}
+
+.jo_btnRed {
+    background-color: var(--jo_red);
+    box-shadow: 0 3px 0px var(--jo_dark_red), 0px 2px 0px 0px rgba(255, 255, 255, 0.5) inset;
+}
+
+.jo_btnBlue {
+    background-color: var(--jo_dark_water);
+    box-shadow: 0 3px 0px var(--jo_text), 0px 2px 0px 0px rgba(255, 255, 255, 0.5) inset;
+}
+
+/* 大按鈕Hover */
+
+.jo_btn:hover {
+    filter: brightness(1.1) saturate(1.1);
+    transform-origin: bottom;
+    transform: translateY(-3px);
+    transition-duration: 0.25s;
+    transition-timing-function: cubic-bezier(0, 1.16, .65, 1.71);
+    cursor: pointer;
+}
+
+.jo_btnWater:hover {
+    box-shadow: 0 6px 0px var(--jo_dark_water), 0px 2px 0px 0px rgba(255, 255, 255, 0.5) inset;
+}
+
+.jo_btnOrange:hover {
+    box-shadow: 0 6px 0px var(--jo_dark_orange), 0px 2px 0px 0px rgba(255, 255, 255, 0.5) inset;
+}
+
+.jo_btnRed:hover {
+    box-shadow: 0 6px 0px var(--jo_dark_red), 0px 2px 0px 0px rgba(255, 255, 255, 0.5) inset;
+}
+
+.jo_btnBlue:hover {
+    box-shadow: 0 6px 0px var(--jo_text), 0px 2px 0px 0px rgba(255, 255, 255, 0.5) inset;
+}
+
+/* navBar文字 */
+
+.jo_navTitleYellow, .jo_navTitleGreen {
+    color: var(--jo_white);
+    text-align: center;
+    width: 100px;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.jo_navTitleYellow:hover, .jo_navTitleGreen:hover {
+    color: var(--jo_dark_water);
+}
+
+.jo_navTitleYellow hr, .jo_navTitleGreen hr {
+    border-radius: 10px;
+    transform: scaleX(0);
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(0, 1.16, .65, 1.71);
+    margin: 2px 0px;
+}
+
+.jo_navTitleYellow hr {
+    background-color: var(--jo_yellow);
+    border: var(--jo_yellow) 2px solid;
+}
+
+.jo_navTitleGreen hr {
+    background-color: var(--jo_water);
+    border: var(--jo_water) 2px solid;
+}
+
+.jo_navTitleYellow:hover hr, .jo_navTitleGreen:hover hr {
+    transform: scaleX(1);
+}
+
+/* 愛心 */
+
+.jo_heartDiv {
+    width: 100px;
+    height: 85px;
+    position: relative;
+}
+
+.jo_heart {
+    position: absolute;
+    width: 100px;
+}
+
+.jo_heart:hover {
+    filter: brightness(0.8);
+}
+
+.jo_heartPink {
+    transition-delay: 0.3s;
+    transition-timing-function: ease-out;
+    position: absolute;
+    filter: brightness(2.5) hue-rotate(135deg) saturate(5);
+    animation-name: jo_heartPinkAni;
+    animation-duration: 0.2s;
+    animation-delay: 0.2s;
+}
+
+@keyframes jo_heartPinkAni {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.jo_heartPinkAni {
+    position: absolute;
+    filter: brightness(2.5) hue-rotate(135deg) saturate(5);
+    animation-name: jo_heartAni;
+    animation-duration: 0.4s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes jo_heartAni {
+    0% {
+        transform: scale(0.5);
+        opacity: .5;
+    }
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+.jo_navBar {
+    width: 100%;
+    height: 100px;
+    background-image: url(/img/jo_images/jo_navBG.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* position: fixed; */
+    top: 0px;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/jo_css.css">
+    <style>
+        .title {
+            margin: 0;
+        }
+
+        .detal {
+            color: rgb(133, 133, 133);
+            margin-top: 0px;
+            margin-bottom: 25px;
+        }
+
+        hr {
+            margin-bottom: 80px;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <h2 class="title" style="color: rgb(196, 34, 34);">
+        XD檔路徑->GoogleDrive/joinnn/jojoinin_0708.xd（請永遠拿最新日期的檔案，如果有更新我會說:)）</h2>
+    <br>
+
+    <!-- <div class="jo_navBar">
+    </div> -->
+
+
+
+    <h2 class="title">---按鈕區---</h2>
+    <h3 class="detal"> class步驟：<br>1.先套用jo_btn（灰色按鈕不要套用這個class） <br>2.套用jo_btn顏色（Blue/Orange/Red/Grey）
+        <br>3.jo_btn尺寸（jo_btn_m /
+        jo_btn_s），一般尺寸不需要加size</h3>
+
+    <!-- 按鈕從這邊開始 -->
+    <input type="button" name="" id="" value="我是藍色按鈕" class="jo_btn jo_btnWater">
+    <input type="button" name="" id="" value="我是橘色按鈕" class="jo_btn jo_btnOrange">
+    <input type="button" name="" id="" value="我是紅色按鈕" class="jo_btn jo_btnRed">
+    <input type="button" name="" id="" value="我是深藍色按鈕" class="jo_btn jo_btnBlue">
+    <input type="button" name="" id="" value="我是灰色按鈕" class="jo_btnGrey ">
+    <input type="button" name="" id="" value="小按鈕" class="jo_btn jo_btn_m jo_btnWater">
+    <input type="button" name="" id="" value="小小按鈕" class="jo_btn jo_btn_s jo_btnWater">
+    <!-- 按鈕結束 -->
+
+    <hr>
+    <h2 class="title">---NavBar文字---</h2>
+    <h3 class="detal">可直接使用</h3>
+
+
+    <!-- 目錄文字從這邊開始 -->
+    <div class="jo_navTitleYellow">
+        <span>目錄黃色</span>
+        <hr>
+    </div>
+
+    <div class="jo_navTitleGreen">
+        <span>目錄綠色</span>
+        <hr>
+    </div>
+    <!-- 目錄文字結束 -->
+
+    <hr>
+    <h2 class="title">---按讚愛心---</h2>
+    <h3 class="detal">可直接使用（改 jo_heartDiv 尺寸即可），如有需要請自行修改原始檔</h3>
+
+
+    <!-- 愛心從這邊開始 -->
+    <div class="jo_heartDiv">
+        <img class="jo_heart" src="/img/jo_images/jo_heart.svg" alt="">
+        <img class="jo_heart " src="/img/jo_images/jo_heart.svg" alt="">
+    </div>
+    <!-- 愛心結束 -->
+
+    <hr>
+    <h2 class="title">---文字---</h2>
+
+    <!-- 文字從這邊開始 -->
+    <h3 class="detal">除了主標題以外的文字，如看起來是黑色的部分請用 var(--jo_text) 這個顏色
+        <br>目前預設每個字都是粗體，有些內容看起來比較細的，再自行在CSS標籤中加上 font-weight: normal</h3>
+
+    <h1 class="jo_title_l">主標題（XD中30pt的主標題一律改成這個） class:jo_title_l</h1>
+    <h1>30pt請用h1，用於頁面中重要資訊，如：你已成功註冊的字樣</h1>
+    <h2>20pt、24pt請用h2，小標題</h2>
+    <h3>18pt請用h3，內文</h3>
+    <h4>16pt請用h4，Placeholder</h4>
+    <!-- 文字結束 -->
+
+    <hr>
+    <h2 class="title">---格線系統---</h2>
+    <div style="background-color: rgb(216, 157, 180);" class="jo_col_pc">
+        <h2>尺寸相當於col-10，class:jo_col_pc </h2>
+        <h2>border-radius 目前都先設定為25px </h2>
+    </div>
+
+
+
+<script src="./js/jo_js.js"></script>
+</body>
+
+</html>
