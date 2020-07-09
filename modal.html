@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/jo_css.css">
+
+    <style>
+        body{
+            background-color: black;
+        }
+        .jo_modal{
+            width: 500px;
+            height: 560px;
+            background-color:var(--jo_lGrey2) ;
+            color: var(--jo_dark_water);
+            text-align: center;
+            border-radius: 25px;
+            margin: auto;
+        }
+        .modal_title{
+            background-color: var(--jo_lGrey1);
+            height: 70px;
+            border-radius: 25px 25px 0px 0px;
+            margin-bottom: 10%;
+        }
+        .modal_content,.modal_content h1{
+            margin-bottom: 20px;
+        }
+        .modal_content textarea{
+            font-size: 1rem;
+            width: 80%;
+            border: var(--jo_dGrey3) 1px solid;
+            border-radius: 10px;
+            margin-top: 5%;
+            outline: none;
+            padding: 10px;
+        }
+        .modal_footer{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        button.modal_close {
+            background: var(--jo_red);
+            border: none;
+            border-radius: 50%;
+            color: #FFFFFF;
+            cursor: pointer;
+            outline: none;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            right: 30px;
+            top: 15px;
+            transition: transform 600ms;
+            position: relative;
+            float: right;
+        }
+        button.modal_close:hover {
+            transform: rotate(360deg) scale(1.10);
+            transition: transform 600ms;
+        }
+        button.modal_close span, span:before, span:after {
+            background: #FFFFFF;
+            content: '';
+            cursor: pointer;
+            display: block;
+            height: 3px;
+            position: absolute;
+            width: 25px;
+        }
+
+        button.modal_close span:first-child {
+            background: none;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        button.modal_close span:before {
+            transform: rotate(45deg);
+        }
+        button.modal_close span:after {
+            transform: rotate(-45deg);
+        }
+
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="jo_modal">
+        <div class="modal_title">
+            <button role="button" class="modal_close" title="Close"><span></span></button>
+        </div>
+        <div class="modal_content">
+            <h1>取消Jo團</h1>
+            <h3>請填寫取消原因，我們會將取消的原因發布給參加者知道 :</h3>
+            <textarea name="" id="" rows="10"  placeholder="請填寫原因"></textarea>
+        </div>
+        <div class="modal_footer">
+            <button class="jo_btn jo_btnOrange">送出</button>
+            <button class="jo_btn jo_btnBlue">取消</button>
+        </div>
+    </div>
+    
+</body>
+</html>
